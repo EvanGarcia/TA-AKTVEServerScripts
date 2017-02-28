@@ -12,7 +12,7 @@
 # DIFFERENT CERTIFICATE "TRIBE" (E.G. FOR THE DATABASE SERVERS INSTEAD OF THE
 # API SERVERS).
 
-TRIBE_LEADER_IP="138.197.232.193"
+TRIBE_LEADER_IP="138.197.232.193" # This is a floating IP address...if need be, just change what server it points to in Digital Ocean
 CERTIFICATE_DOMAIN="aktve-app.com"
 CERTIFICATE_ADMIN="certadmin"
 
