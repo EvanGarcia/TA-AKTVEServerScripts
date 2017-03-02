@@ -27,8 +27,7 @@ then
 	echo "This server is the tribe leader."
 
 	echo "Attempting to update SSL certificate via Let's Encrypt..."
-	/usr/bin/letsencrypt renew >> /var/log/letsencrypt-renewal.log
-	/bin/systemctl reload nginx
+	letsencrypt renew
 
 	echo "Copying certificates to certificate admin's home directory..."
 	mkdir -p /home/${CERTIFICATE_ADMIN}/current_ssl_certificate
