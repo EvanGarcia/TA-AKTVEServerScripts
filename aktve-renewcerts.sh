@@ -40,3 +40,6 @@ else
 	scp -i /home/${CERTIFICATE_ADMIN}/.ssh/id_rsa ${CERTIFICATE_ADMIN}@${TRIBE_LEADER_IP}:~/current_ssl_certificate/* /home/${CERTIFICATE_ADMIN}/current_ssl_certificate
 	cp -f /home/${CERTIFICATE_ADMIN}/current_ssl_certificate/* /etc/letsencrypt/live/${CERTIFICATE_DOMAIN}
 fi
+
+systemctl restart nginx
+systemctl restart aktveapisvr
